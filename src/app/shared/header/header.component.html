@@ -1,0 +1,54 @@
+<header class="header-container">
+  <div class="button-container">
+    <a href="">
+      <img
+        class="img-logo"
+        src="assets/imgs/logo.png"
+        alt="Logo do aroma (Colher de sopá com aroma subindo)"
+      />
+    </a>
+  </div>
+
+  <div class="button-container">
+    <button mat-button>
+      <span class="button-content">
+        <img
+          src="assets/imgs/home.png"
+          alt="Ícone de casa relacionado à página inicial"
+          class="button-icon"
+        />
+        <span class="button-text" (click)="navigateToHome()">Início</span>
+      </span>
+    </button>
+
+    <button mat-button>
+      <span class="button-content">
+        <img
+          src="assets/imgs/colher.png"
+          alt="Ícone para explorar receitas"
+          class="button-icon"
+        />
+        <span class="button-text" (click)="navigateToExploreRecipes()" style="font-weight: bold;">Explorar receitas</span>
+      </span>
+    </button>
+
+    <button mat-button>
+      <span class="button-content">
+        <img
+          src="assets/imgs/cenoura.png"
+          alt="Ícone para descobrir ingredientes"
+          class="button-icon"
+        />
+        <span class="button-text" (click)="navigateToExploreRecipes()">Descobrir ingredientes</span>
+      </span>
+    </button>
+  </div>
+
+  <div class="auth-container">
+    <button mat-button>Entrar</button>
+    <button mat-button>Registrar</button>
+    <a href="" class="profile">
+      <img src="assets/imgs/profile.png" alt="Profile" class="profile-icon" />
+    </a>
+  </div>
+</header>

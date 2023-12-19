@@ -1,0 +1,39 @@
+<div class="container-pai">
+  <div class="search-container">
+    <div class="search-input">
+      <button mat-icon-button matPrefix>
+        <a><img src="assets/imgs/search.svg"></a>
+      </button>
+      <input
+        matInput
+        class="input-certo"
+        [(ngModel)]="termoPesquisa"
+        placeholder="Pesquisar"
+      />
+    </div>
+    <div class="drop-down">
+      <mat-select
+        class="drop-style"
+        placeholder="Filtrar ingredientes"
+        [(ngModel)]="selectedOption"
+      >
+        <mat-option *ngFor="let option of options" [value]="option">
+          {{ option }}
+        </mat-option>
+      </mat-select>
+    </div>
+  </div>
+
+  <div class="ingredientes-select">
+    <div class="button-container">
+      <button
+        *ngFor="let button of buttons"
+        class="button"
+        [ngStyle]="{ 'background-color': button.color }"
+      >
+        {{ button.text }}
+        <span class="delete-icon" (click)="deleteButton(button)">X</span>
+      </button>
+    </div>
+  </div>
+</div>

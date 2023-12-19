@@ -1,0 +1,83 @@
+mat-grid-list {
+  width: 100%;
+  margin: 50px;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.example-card {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  margin: 0;
+}
+
+mat-card-title {
+  background-color: #D5FFA3;
+  color: black;
+  font-weight: 700;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+mat-card {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 90px;
+}
+
+.card {
+  flex-basis: calc(15% - 16px); /* Três colunas com espaçamento entre elas */
+  box-sizing: border-box;
+  margin-bottom: 24px;
+}
+
+
+mat-card-content p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 20px;
+}
+
+mat-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.custom-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.custom-title {
+  background-color: #d5ffa3;
+  color: black;
+
+  padding-bottom: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex-basis: calc(50% - 16px);
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .card {
+    flex-basis: 100%;
+  }
+}
